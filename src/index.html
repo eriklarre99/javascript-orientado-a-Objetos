@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e_project</title>
+    
+    <!-- Boostrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Montserrat Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
+    <!-- Favicon resolve-->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!-- Css import -->
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap'); -->
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-dark bg-dark shadow  p-2 mb-3">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <i class="fab fa-js-square fa-2x mx-2 text-warning"></i>
+            </a>
+
+            <div class="d-flex">
+                <a href="#" class="gris_kire">
+                    <i class="fab fa-github fa-2x"></i> 
+                </a>
+                <a href="#" class="gris_kire mx-3">
+                    <i class="fab fa-instagram fa-2x"></i> 
+                </a>
+                <a href="#" class="gris_kire ">
+                    <i class="fab fa-twitter fa-2x"></i> 
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <h4 id="title-main" class="hoverEffects mb-3"> Javascript - Object-oriented programming </h4>
+
+    <div class="container mb-4">
+        <div class="row">
+            <!-- form -->
+            <div class="col-md-4">
+                <div class="card bg-dark card_kire">
+                    <form id="movie_form"> 
+                        <div class="card-header teal_kire">
+                            New Movie
+                        </div>
+                        <div class="card-body">  
+
+                            <!-- Message -->
+                            <div class="mb-3 d-grid gap-2 text-center" id="beforeApp">
+                                <div id="app"></div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input id="movie" type="text" class="form-control bg-dark gris_kire" 
+                                style="border: none;" placeholder="Enter Movie" >
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="description" rows="5" class="form-control bg-dark gris_kire border-0"
+                                    placeholder="Descriptions"></textarea>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-outline-info ">Save</button>
+                                <button type="reset" class="btn btn-outline-danger btnReset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- table  list-->
+            <div class="col-md-8">
+                <div class="card bg-dark card_kire">
+                    <div class="card-header col teal_kire">
+                        Movie (list)
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3" >
+                            <table class="table">
+                                <thead>
+                                    <tr class="teal_kire">
+                                        <th scope="col">Movie</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col" class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="gris_kire" id="movieList">
+                                        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="container">
+
+    <!-- <footer> -->
+    <div class="container-fluid">
+        <div class="row text-white p-4 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-instagram fa-8x gris_kire hoverEffects"></i>
+                <h3><a class=" h3 text-info " style="text-decoration:none;" href="https://instagram.com/erik_larre"
+                        target=_blank>
+                        Seguinos en Instagram
+                </a></h3>
+                <p>
+                    <span class="gris_kire">
+                        Elit exercitationem id illo sit distinctio. Deserunt ut debitis voluptates mollitia
+                        dignissimos eligendi vel quidem itaque dolores ratione ut. Soluta accusantium dolor nemo
+                        suscipit rerum. Aliquid quasi excepturi provident eos.
+                    </span>
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <i class="fab fa-youtube fa-8x gris_kire hoverEffects"></i>
+                <h3 class="text-info">Seguinos en YouTube</h3>
+                <p>
+                    <span class="gris_kire">
+                        Elit exercitationem id illo sit distinctio. Deserunt ut debitis voluptates mollitia
+                        dignissimos eligendi vel quidem itaque dolores ratione ut. Soluta accusantium dolor nemo
+                        suscipit rerum. Aliquid quasi excepturi provident eos.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script type="module" src="public/js/main.js"></script>
+
+</body>
+</html>
