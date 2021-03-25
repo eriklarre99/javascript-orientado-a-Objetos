@@ -7,7 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "build": "webpack -p "
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/eriklarre99/javascript-orientadoObjeto#readme",
   "dependencies": {
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.5.0"
   }

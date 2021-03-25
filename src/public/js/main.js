@@ -3,6 +3,9 @@ import { UI } from "./UI.js";
 
 console.log("script ok");
 
+// css loader
+require('../css/main.css');
+
 // DOM Events
 document.getElementById("movie_form").addEventListener("submit", e => {
     e.preventDefault();
